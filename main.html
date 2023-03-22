@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Lighting Application</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: darkgrey;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px auto;
+        max-width: 800px;
+    }
+    
+    .lights-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .light {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: gray;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+    }
+    
+    #led1 {
+        background-color: red;
+    }
+    
+    #led2 {
+        background-color: green;
+    }
+    
+    #led3 {
+        background-color: blue;
+    }
+
+    #led4 {
+        background-color: darkgreen;
+    }
+    
+    .controls-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lights-box {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+    
+    label {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    select,
+    input[type="color"] {
+        font-size: 18px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    
+    input[type="color"] {
+        border: none;
+        background-color: transparent;
+        height: 40px;
+        width: 100px;
+    }
+    </style>
+</head>
+<body>
+   <div class="jumbotron">
+	<h1>Smart Light Application</h1>
+   </div>
+
+   <div class="container">
+      <div class="controls-container">
+         <h2>Controls</h2>
+         <label for="light-select">Select a light:</label>
+         <select id="light-select">
+            <option value="led1">Led 1</option>
+            <option value="led2">Led 2</option>
+            <option value="led3">Led 3</option>
+            <option value="led4">Led 4</option>
+         </select>
+         <label for="color-picker">Choose a color:</label>
+         <input type="color" id="color-picker">
+      </div>
+      <div class="lights-box">
+      <div class="lights-container">
+         <div class="light" id="led1"></div>
+         <div class="light" id="led2"></div>
+         <div class="light" id="led3"></div>
+         <div class="light" id="led4"></div>
+      </div>
+      </div>
+   </div>
+     
+	<script src="1.js"></script>
+    <!-- Bootstrap 4 JavaScript -->
+    <script src
+
+
+      <!-- Bootstrap 4 JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax
+
+</body>
+</html>
